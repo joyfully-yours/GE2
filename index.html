@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graded Exercise 2</title>
+</head>
+<body>
+
+<script>
+
+    var x = prompt("Enter the length of the first side:");
+    var y = prompt("Enter the length of the second side:");
+    var z = prompt("Enter the length of the third side:");
+
+    var valid = validateInput(x, y, z);
+
+    function validateInput(x, y, z) {
+        if (isNaN(x) || isNaN(y) || isNaN(z)) {
+            window.alert("Invalid. Please enter positive numbers only.");
+        }
+        else{
+            
+            var identify = whatriangle(x, y, z);
+
+ function whatriangle(x, y, z) {
+   if (x === y && y === z) {
+      alert("This triangle is Equilateral!");
+  } else if (x === y || x === z || y === z) {
+      alert("This triangle is Isosceles!");
+  } else {
+      alert("This triangle is Scalene!");
+  }
+}
+
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
